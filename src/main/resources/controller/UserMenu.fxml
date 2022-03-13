@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="641.0" prefWidth="1069.0" stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UserMainMenuController">
+  <columnConstraints>
+    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="80.0" minHeight="0.0" prefHeight="66.39999389648438" valignment="CENTER" vgrow="SOMETIMES" />
+    <RowConstraints fillHeight="false" maxHeight="50.0" minHeight="10.0" prefHeight="180.8000061035156" valignment="CENTER" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="70.0" minHeight="10.0" prefHeight="227.00000610351566" valignment="CENTER" vgrow="SOMETIMES" />
+      <RowConstraints fillHeight="false" maxHeight="600.0" minHeight="10.0" prefHeight="416.8000366210937" valignment="CENTER" vgrow="SOMETIMES" />
+      <RowConstraints fillHeight="false" maxHeight="600.0" minHeight="10.0" prefHeight="37.59996337890618" valignment="CENTER" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label fx:id="titleLbl" alignment="CENTER" prefHeight="35.0" prefWidth="207.0" text="User Operations" underline="true" />
+      <HBox fillHeight="false" prefHeight="130.0" prefWidth="798.0" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+         <children>
+            <JFXButton onAction="#viewAvailableVacationPackages" prefHeight="30.0" prefWidth="265.0" text="View Available Vacation Packages" textAlignment="CENTER">
+               <HBox.margin>
+                  <Insets left="100.0" right="70.0" />
+               </HBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton onAction="#filterVacationPackages" prefHeight="30.0" prefWidth="232.0" text="Search Vacation Packages">
+               <HBox.margin>
+                  <Insets left="30.0" right="100.0" />
+               </HBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="viewBookedBtn" onAction="#viewBookedVacations" prefHeight="30.0" prefWidth="196.0" text="View Booked Vacations">
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </HBox>
+      <HBox fx:id="filterHBox" fillHeight="false" prefHeight="100.0" prefWidth="200.0" visible="false" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+         <children>
+            <JFXTextArea fx:id="priceTxt" prefHeight="15.0" prefWidth="178.0" promptText="price">
+               <HBox.margin>
+                  <Insets left="20.0" right="40.0" top="20.0" />
+               </HBox.margin>
+            </JFXTextArea>
+            <JFXComboBox fx:id="destinationCombo" prefHeight="15.0" prefWidth="178.0" promptText="destination">
+               <HBox.margin>
+                  <Insets top="30.0" />
+               </HBox.margin>
+            </JFXComboBox>
+            <DatePicker fx:id="startDate" prefHeight="31.0" prefWidth="178.0" promptText="start date">
+               <HBox.margin>
+                  <Insets left="50.0" top="30.0" />
+               </HBox.margin>
+            </DatePicker>
+            <JFXButton fx:id="searchBtn" onAction="#searchVacationPackages" prefHeight="34.0" prefWidth="116.0" text="Search">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <HBox.margin>
+                  <Insets left="40.0" top="20.0" />
+               </HBox.margin>
+            </JFXButton>
+         </children>
+      </HBox>
+      <TableView fx:id="packagesTable" prefHeight="414.0" prefWidth="400.0" visible="false" GridPane.rowIndex="3" />
+      <Label fx:id="resultLbl" alignment="CENTER" contentDisplay="CENTER" prefHeight="18.0" prefWidth="693.0" text="Label" textAlignment="CENTER" textFill="#46c144" visible="false" wrapText="true" GridPane.rowIndex="4">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TableView fx:id="bookedVacationsTable" prefHeight="381.0" prefWidth="1070.0" visible="false" GridPane.rowIndex="3" />
+   </children>
+</GridPane>

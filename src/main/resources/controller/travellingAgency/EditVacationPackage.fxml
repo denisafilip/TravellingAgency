@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" fillWidth="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="699.0" prefWidth="708.0" stylesheets="@../stylesheet.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.travellingAgency.EditVacationPackageController">
+    <children>
+        <Label fx:id="titleLbl" alignment="CENTER" contentDisplay="CENTER" prefHeight="63.0" prefWidth="343.0" text="Edit Vacation Packages" textAlignment="CENTER" underline="true">
+            <VBox.margin>
+                <Insets bottom="40.0" />
+            </VBox.margin></Label>
+      <JFXComboBox fx:id="vPackagesCombo" onAction="#chooseVacationPackage" prefHeight="95.0" prefWidth="646.0" promptText="Select a vacation package to edit">
+         <VBox.margin>
+            <Insets bottom="50.0" />
+         </VBox.margin>
+      </JFXComboBox>
+        <JFXTextArea fx:id="packageNameText" prefHeight="32.0" prefWidth="464.0" promptText="package name" wrapText="true">
+            <font>
+                <Font size="16.0" />
+            </font>
+            <VBox.margin>
+                <Insets bottom="20.0" />
+            </VBox.margin>
+        </JFXTextArea>
+        <DatePicker fx:id="startDate" prefHeight="42.0" prefWidth="470.0" promptText="starting date">
+            <VBox.margin>
+                <Insets bottom="20.0" />
+            </VBox.margin>
+        </DatePicker>
+        <DatePicker fx:id="endDate" prefHeight="42.0" prefWidth="470.0" promptText="ending date">
+            <VBox.margin>
+                <Insets bottom="20.0" />
+            </VBox.margin>
+        </DatePicker>
+        <JFXTextArea fx:id="priceText" prefHeight="32.0" prefWidth="464.0" promptText="price" text="0.00" wrapText="true">
+            <font>
+                <Font size="16.0" />
+            </font>
+            <VBox.margin>
+                <Insets bottom="20.0" />
+            </VBox.margin>
+        </JFXTextArea>
+        <JFXTextArea fx:id="maxBookingUsersText" prefHeight="32.0" prefWidth="464.0" promptText="maximum booking users" wrapText="true">
+            <font>
+                <Font size="16.0" />
+            </font>
+            <VBox.margin>
+                <Insets bottom="20.0" />
+            </VBox.margin>
+        </JFXTextArea>
+        <JFXTextArea fx:id="extraDetailsText" prefHeight="32.0" prefWidth="464.0" promptText="extra details" wrapText="true">
+            <font>
+                <Font size="16.0" />
+            </font>
+            <VBox.margin>
+                <Insets bottom="20.0" />
+            </VBox.margin>
+        </JFXTextArea>
+        <JFXComboBox fx:id="destinationCombo" prefHeight="95.0" prefWidth="466.0" promptText="Choose destination">
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin></JFXComboBox>
+        <Label fx:id="resultLbl" alignment="CENTER" contentDisplay="CENTER" prefHeight="28.0" prefWidth="452.0" text="Label" textAlignment="CENTER" textFill="#0db10a" visible="false">
+            <font>
+                <Font size="14.0" />
+            </font>
+            <VBox.margin>
+                <Insets top="20.0" />
+            </VBox.margin>
+        </Label>
+        <JFXButton fx:id="editVPackageBtn" onAction="#editVacationPackage" prefHeight="100.0" prefWidth="190.0" text="Submit Changes">
+            <VBox.margin>
+                <Insets top="20.0" />
+            </VBox.margin>
+        </JFXButton>
+    </children>
+    <padding>
+        <Insets bottom="10.0" />
+    </padding>
+</VBox>

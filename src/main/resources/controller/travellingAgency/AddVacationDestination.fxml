@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" fillWidth="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="354.0" prefWidth="600.0" stylesheets="@../stylesheet.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.travellingAgency.AddVacationDestinationController">
+   <children>
+      <Label fx:id="titleLbl" alignment="CENTER" contentDisplay="CENTER" prefHeight="63.0" prefWidth="343.0" text="Add Vacation Destination" textAlignment="CENTER" underline="true" />
+      <Label text="Name of destination:">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <padding>
+            <Insets bottom="30.0" />
+         </padding>
+      </Label>
+      <JFXTextArea fx:id="vDestinationName" labelFloat="true" prefHeight="32.0" prefWidth="464.0" promptText="vacation destination" wrapText="true">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXTextArea>
+      <Label fx:id="resultLbl" alignment="CENTER" contentDisplay="CENTER" prefHeight="28.0" prefWidth="452.0" text="Label" textAlignment="CENTER" textFill="#0db10a" visible="false">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <VBox.margin>
+            <Insets top="20.0" />
+         </VBox.margin>
+      </Label>
+      <JFXButton fx:id="addVDestinationBtn" onAction="#addVacationDestination" prefHeight="39.0" prefWidth="111.0" text="Add">
+         <VBox.margin>
+            <Insets top="30.0" />
+         </VBox.margin>
+      </JFXButton>
+   </children>
+</VBox>

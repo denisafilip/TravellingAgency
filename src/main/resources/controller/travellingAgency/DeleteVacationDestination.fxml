@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" fillWidth="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="349.0" prefWidth="708.0" stylesheets="@../stylesheet.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.travellingAgency.DeleteVacationDestinationController">
+    <children>
+        <Label fx:id="titleLbl" alignment="CENTER" contentDisplay="CENTER" prefHeight="63.0" prefWidth="343.0" text="Delete Vacation Destination" textAlignment="CENTER" underline="true">
+            <VBox.margin>
+                <Insets bottom="70.0" />
+            </VBox.margin></Label>
+        <JFXComboBox fx:id="vDestinationCombo" onAction="#chooseVacationDestination" prefHeight="54.0" prefWidth="646.0" promptText="Select a vacation destination to delete">
+            <VBox.margin>
+                <Insets bottom="30.0" />
+            </VBox.margin>
+        </JFXComboBox>
+        <Label fx:id="resultLbl" alignment="CENTER" contentDisplay="CENTER" prefHeight="28.0" prefWidth="452.0" text="Label" textAlignment="CENTER" textFill="#0db10a" visible="false">
+            <font>
+                <Font size="14.0" />
+            </font>
+            <VBox.margin>
+                <Insets bottom="20.0" top="20.0" />
+            </VBox.margin>
+        </Label>
+        <JFXButton fx:id="deleteVPackageBtn" onAction="#deleteVacationDestination" prefHeight="54.0" prefWidth="190.0" text="Delete">
+            <VBox.margin>
+                <Insets />
+            </VBox.margin>
+        </JFXButton>
+    </children>
+    <padding>
+        <Insets bottom="10.0" />
+    </padding>
+</VBox>

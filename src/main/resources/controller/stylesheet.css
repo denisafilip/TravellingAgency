@@ -1,0 +1,170 @@
+#agencyMainMenu {
+    -fx-background-image: url("../images/mainMenu5.png");
+    -fx-background-position: center center;
+}
+
+#titleLbl {
+    -fx-font-weight: bold;
+    -fx-font-size: 24px;
+}
+
+#hBoxButtons {
+    -fx-background-color: #7bc7b8;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+}
+
+.jfx-button:pressed {
+    -fx-background-color: #eddb34;
+    -fx-text-fill: black;
+    -fx-cursor: hand;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+}
+
+.jfx-button:hover {
+    -fx-background-color: #eddb34;
+    -fx-text-fill: black;
+    -fx-cursor: hand;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+}
+
+.jfx-button {
+    -fx-background-color: black;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+}
+
+#searchButton {
+    -fx-background-image: url("../images/magGlass.png");
+    -fx-background-position: center;
+    -fx-background-size: 60px;
+}
+
+.tree-table-view .column-header,
+.tree-table-view .column-header .filler,
+.tree-table-view .column-header-background .filler {
+    -fx-background-color: #eddb34;
+    -fx-stroke: white;
+    -fx-size: 30px;
+    -fx-alignment: CENTER ;
+    -fx-text-alignment: center;
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: white;
+    -fx-font-weight: bold;
+
+}
+.tree-table-row-cell:filled:hover {
+    -fx-size:50px;
+    -fx-alignment: CENTER;
+    -fx-text-alignment: center;
+}
+.tree-table-view:row-selection {
+    -fx-background-color: white;
+    -fx-text-fill: white;
+    -fx-fixed-cell-size: 35px;
+    -fx-alignment: CENTER;
+    -fx-text-alignment: center;
+    -fx-border-color: black;
+    -fx-border-radius: 5px;
+}
+
+.tree-table-view .table-column{
+    -fx-text-alignment: center;
+    -fx-alignment: CENTER;
+    -fx-cell-size: 70px;
+}
+
+
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-opacity: 0;
+}
+
+.tab-pane
+{
+    -fx-tab-min-width:90px;
+}
+
+.tab{
+    -fx-background-insets: 0 1 0 1,0,0;
+}
+.tab-pane .tab
+{
+    -fx-background-color: #e6e6e6;
+
+}
+
+.tab-pane .tab:selected
+{
+    -fx-background-color: #3c3c3c;
+}
+
+.tab .tab-label {
+    -fx-alignment: CENTER;
+    -fx-text-fill: #828282;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+.tab:selected .tab-label {
+    -fx-alignment: CENTER;
+    -fx-text-fill: #eddb34;
+}
+
+.tab-pane:top *.tab-header-area {
+    -fx-background-insets: 0, 0 0 1 0;
+    /* -fx-padding: 0.416667em 0.166667em 0.0em 0.833em; /* 5 2 0 10 */
+    -fx-padding: 0.416667em 0.166667em 0.0em 0.0em; /* overridden as 5 2 0 0 */
+}
+
+
+#tabOneAnchorPane {
+    -fx-background-image: url("../images/minimalist-pattern5.jpg");
+    -fx-background-repeat: stretch;
+    -fx-background-size: 1000 700;
+    -fx-background-position: center center;
+}
+
+#tabTwoAnchorPane {
+    -fx-background-image: url("../images/minimalist-pattern5.jpg");
+    -fx-background-repeat: stretch;
+    -fx-background-size: 1000 700;
+    -fx-background-position: center center;
+}
+
+#txtNewCompositeTitle, #txtNewTitle, #txtNewRating, #txtNewCalories, #txtNewProtein, #txtNewFat, #txtNewSodium, #txtNewPrice, #txtClientName {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-prompt-text-fill: white;
+}
+
+#btnCompositeProduct, #btnBaseProduct {
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-cursor: hand;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+}
+
+#btnCompositeProduct:pressed, #btnBaseProduct:pressed {
+    -fx-background-color: #eddb34;
+    -fx-text-fill: black;
+    -fx-cursor: hand;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+}
+
+#btnCompositeProduct:hover, #btnBaseProduct:hover {
+    -fx-background-color: #eddb34;
+    -fx-text-fill: black;
+    -fx-cursor: hand;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+}
+
+#listViewTimeInterval {
+    -fx-text-fill: white;
+}
